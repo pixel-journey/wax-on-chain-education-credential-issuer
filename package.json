@@ -1,0 +1,24 @@
+{
+  "name": "wax-on-chain-education-credential-issuer",
+  "version": "0.1.0",
+  "private": true,
+  "description": "alice finished intro, so wax-101 can be recorded. bob has not, so he is refused. Nothing is minted.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "next": "^15.5.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.10",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.8.0",
+    "vitest": "^2.1.8"
+  }
+}
