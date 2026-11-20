@@ -3,7 +3,7 @@
 > **Rung:** `npm test` passes. Nothing is minted, hashed, or submitted.  
 > **The test is the rule.** Lesson status is [wax-on-chain-learning-path-visualizer](https://github.com/pixel-journey/wax-on-chain-learning-path-visualizer). Salted disclosure is [wax-verifiable-credential-patterns](https://github.com/pixel-journey/wax-verifiable-credential-patterns).
 
-Official context: [docs.wax.io](https://docs.wax.io/).
+Official context: [docs.wax.io](https://docs.wax.io/). Contrast: [quest log](https://github.com/pixel-journey/wax-on-chain-quest-log) hard-stops at 20; this lab may return **21** from 20.
 
 ## Learning outcomes
 
@@ -49,6 +49,16 @@ The name regex allows mid-name dots. [px-invariant-kit](https://github.com/pixel
 
 Prerequisite is **only** `requires`. Completing `wax-101` is not required to record `wax-101`.
 
+### Attack → test
+
+| Attack | Lab behavior |
+| --- | --- |
+| Bob without prereq | refused |
+| Duplicate learner+course | refused |
+| Require course id in done | **not** required |
+| 21 rows already | refused before prereq check |
+| Course id `Wax` | refused |
+
 ---
 
 ## Masterclass
@@ -60,17 +70,11 @@ Prerequisite is **only** `requires`. Completing `wax-101` is not required to rec
 3. Treating the 20-row rule like the quest log (quest log cannot grow past 20; this lab can return 21 from 20).  
 4. Accepting `Wax` as a course slug.
 
-### What this is not
-
-- On-chain issuance
-- A signature or hash over the row
-- Proof the learner is a real person
-
 ### Exercises
 
-1. Bob, done `[]`, course requires `intro` — reason?  
-2. Can 20 rows become 21? (Yes.)  
-3. Is `aaaaaaaaaaaa` (12) a valid learner? (Yes.)
+1. Bob, done `[]`, course requires `intro` — reason? (`required lesson is not done`.)  
+2. Can 20 rows become 21? (**Yes**.)  
+3. Is `aaaaaaaaaaaa` (12) a valid learner? (**Yes**.)
 
 ---
 
